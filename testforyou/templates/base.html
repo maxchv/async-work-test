@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test for you</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url('static', filename='css/style.css') }}"/>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8176bbfa2c.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="{{ url('static', filename='js/scrypt.css') }}"></script>
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <h2 class="logo"><a href="">Test for You</a></h2>
+        <ul class="nav right">
+            <li><a href="">Users</a></li>
+            <li><a href="">Courses</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
